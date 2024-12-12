@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'iconfont';
+	src: url('/static/font/font_1881670_o212rfg6etn.woff2?t=1650940687448') format('woff2');
+	
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

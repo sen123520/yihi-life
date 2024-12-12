@@ -1,0 +1,156 @@
+{
+    "name" : "益嗨生活",
+    "appid" : "__UNI__2C0839D",
+    "description" : "我们是一家致力于为广大女性提供创业平台的企业。我们的使命是通过创新的商业模式和卓越的产品品质，帮助女性实现自己的梦想和目标。",
+    "versionName" : "1.0.075",
+    "versionCode" : 10075,
+    "transformPx" : false,
+    "app-plus" : {
+        //原生隐私策略的方法
+        "privacy" : {
+            "prompt" : "template",
+            "template" : {
+                "title" : "服务协议和隐私政策",
+                "message" : "尊敬的益宝商城用户：<br/>　　亲～感谢您下载和使用益宝App和H5网站。我们依据最新的监管要求，在您使用益宝商城服务之前，需请您仔细阅读<a href='http://qicaiweb.dailingmei.com/agreement.html'>《服务协议》</a>和<a href='http://qicaiweb.dailingmei.com/privacy.html'>《隐私政策》</a>了解详细信息。<br/>　　我们将严格按照法律法规保护您的个人隐私。 益宝收集您的个人信息及使用范围如下：<br/>1、网络昵称：用于会员间沟通联系<br/>2、手机号：用于购买商品联系<br/>3、收货地址：用户购买商品联系<br/>4、包括但不限于IMEI、IMSI、OAID、设备MAC地址、软件列表、设备序列号、android ID。<br/>　　我们采用业界先进的安全加密保护措施，保障您的信息安全。未经您同意，我们不会将信息提供给任何第三方。您可以查询、更正、删除个人信息，我们也提供账户注销渠道<br/>",
+                "buttonAccept" : "同意",
+                "buttonRefuse" : "不同意",
+                "second" : {
+                    "title" : "温馨提示",
+                    "message" : "　　进入应用前，你需先同意<a href='http://web.qicaihemei34.com/agreement.html'>《服务协议》</a>和<a href='http://web.qicaihemei34.com/privacy.html'>《隐私政策》</a>，否则将退出应用。",
+                    "buttonAccept" : "同意并继续",
+                    "buttonRefuse" : "退出应用"
+                }
+            }
+        },
+        "compatible" : {
+            "ignoreVersion" : true //true表示忽略版本检查提示框，HBuilderX1.9.0及以上版本支持
+        },
+        /* 5+App特有相关 */
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Payment" : {},
+            "VideoPlayer" : {},
+            "Share" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [],
+                "minSdkVersion" : "19",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "targetSdkVersion" : 30,
+                "schemes" : "qicaiybcc"
+            },
+            "ios" : {
+                "idfa" : false,
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "修改用户头像",
+                    "NSPhotoLibraryAddUsageDescription" : "保存一些产品图片到手机",
+                    "NSCameraUsageDescription" : "扫描二维码"
+                },
+                "dSYMs" : false
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "ios", "android" ],
+                        "appid" : "wx0407bba4f2a96986",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx0407bba4f2a96986",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "iosStyle" : "common",
+                "android" : {
+                    "hdpi" : "C:/Users/Administrator/Desktop/文件/益嗨证书/qicai-img/480x762.png",
+                    "xhdpi" : "C:/Users/Administrator/Desktop/文件/益嗨证书/qicai-img/720x1242.png",
+                    "xxhdpi" : "C:/Users/Administrator/Desktop/文件/益嗨证书/qicai-img/1080x1882.png"
+                },
+                "ios" : {
+                    "storyboard" : ""
+                }
+            }
+        },
+        "nativePlugins" : {}
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "usingComponents" : true,
+        "appid" : "wx942372d349f20cb7",
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true
+        },
+        "permission" : {}
+    },
+    "h5" : {
+        "title" : "益嗨生活",
+        "domain" : "web.qicaihemei34.com",
+        "router" : {
+            "base" : "./"
+        },
+        "template" : "template.h5.html",
+        "devServer" : {
+            "disableHostCheck" : true,
+            "https" : false
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        }
+    },
+    "locale" : "zh-Hans"
+}
